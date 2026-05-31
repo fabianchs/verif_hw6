@@ -1,16 +1,16 @@
 /*
+Instituto Tecnológico de Costa Rica
 Nombre : Fabian Chacon
+Carne: 2018135154
 Curso  : Verificación Funcional
 Tarea  : Tarea 6 - Structs y Clases
 Archivo: compuertas_full_adder.sv
 Descripción:
-  Implementación compatible con Icarus de compuertas lógicas de 2
-  entradas y un Full Adder. Las compuertas se emulan con funciones
+  Compuertas lógicas de 2 entradas y un Full Adder. Las compuertas se emulan con funciones
   y la tabla de verdad se imprime con $display.
-Fecha: 2026-05-30
 */
 
-// Funciones que emulan compuertas de 2 entradas (salida 1 bit)
+ 
 function [0:0] and_f;
   input [0:0] a;
   input [0:0] b;
@@ -59,7 +59,7 @@ function [0:0] nor_f;
   end
 endfunction
 
-// Task que imprime la tabla de verdad del Full Adder usando las funciones
+// Task que imprime la tabla de verdad del FA usando las funciones
 task full_adder_table;
   integer i, j, k;
   reg [0:0] A, B, Cin;
